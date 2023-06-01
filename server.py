@@ -8,8 +8,8 @@ import io
 # import csv
 
 
-AWS_SECRET_KEY_ID = "AKIA33SE4OYZHEPBTIOK"
-AWS_SECRET_KEY = "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"
+AWS_SECRET_KEY_ID = os.getenv("AWS_SECRET_KEY_ID")
+AWS_SECRET_KEY = os.getenv("AWS_SECRET_KEY")
 
 session = boto3.Session(aws_access_key_id = AWS_SECRET_KEY_ID, aws_secret_access_key=AWS_SECRET_KEY)
 
